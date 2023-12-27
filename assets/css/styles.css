@@ -419,7 +419,8 @@ body {
 .services__subtitle,
 .projects__subtitle,
 .stats__subtitle,
-.reviews__subtitle {
+.reviews__subtitle,
+.clients__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitle);
@@ -663,14 +664,16 @@ body {
     left: 5%;
 }
 
-/* ESTILOS SECCION ESTADISTICAS */
+/* ESTILOS SECCION ESTADISTICAS Y MEJORES CLIENTES */
 
-.layout__stats {
+.layout__stats,
+.layout__clients {
     background-color: var(--color-bg-dark);
-    padding: 14rem 11rem;
+    padding: 14rem 10rem;
 }
 
-.stats__container {
+.stats__container,
+.clients__container {
     max-width: var(--mx-width);
     margin: 0 auto;
 }
@@ -679,13 +682,15 @@ body {
     text-align: center !important;
 }
 
-.stats__title {
+.stats__title,
+.clients__title {
     font-size: 6.4rem;
     color: var(--color-secondary);
     margin-bottom: 3rem;
 }
 
-.stats__description {
+.stats__description,
+.clients__description {
     font-size: 2rem;
     width: 60%;
     margin: 0 auto;
@@ -827,4 +832,59 @@ body {
     pointer-events: none;
     top: 16%;
     right: 26%;
+}
+
+/* ESTILOS EXCLUSIVOS MEJORES CLIENTES */
+
+.layout__clients {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 12rem;
+}
+
+.clients__header {
+    text-align: left;
+}
+
+.clients__title {
+    width: 50%;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.clients__description {
+    text-align: left;
+    width: 40%;
+    margin: 0;
+    margin-bottom: 6rem;
+}
+
+.clients__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.clients__item {
+    width: calc(25% - 3rem);
+}
+
+.clients__img {
+    filter: grayscale(100%);
+    opacity: 0.3;
+    transition: all 300ms ease-in-out;
+}
+
+.clients__item:hover>.clients__img {
+    filter: grayscale(0);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.client-shapes__item {
+    position: absolute;
+    z-index: -1;
+    top: 10rem;
+    right: 0;
 }
