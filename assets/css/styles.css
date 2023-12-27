@@ -14,6 +14,7 @@
     --color-bg-dark: #27272E;
     --color-hover-dark: #303035;
     --color-text-description: #99A1AA;
+    --color-borders: #e3e6e9;
 }
 
 /* ESTILOS GENERALES */
@@ -420,7 +421,8 @@ body {
 .projects__subtitle,
 .stats__subtitle,
 .reviews__subtitle,
-.clients__subtitle {
+.clients__subtitle,
+.news__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitle);
@@ -430,7 +432,8 @@ body {
 .services__title,
 .projects__title,
 .stats__title,
-.reviews__title {
+.reviews__title,
+.news__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -764,7 +767,8 @@ body {
     margin-bottom: 6rem;
 }
 
-.reviews__description {
+.reviews__description,
+.news__description {
     margin: 3rem 0;
     width: 50%;
     font-size: 2rem;
@@ -887,4 +891,134 @@ body {
     z-index: -1;
     top: 10rem;
     right: 0;
+}
+
+/* ESTILOS ÚLTIMAS NOTICIAS */
+
+.layout__news {
+    position: relative;
+    z-index: 1;
+    padding: 14rem 0;
+}
+
+.news__container {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+
+.news__header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.news__title {
+    margin-bottom: 3rem;
+}
+
+.news__description {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.news__list {
+    display: flex;
+}
+
+.news__new {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-left: 0;
+    border-top: 1px solid var(--color-borders);
+    border-top: 1px solid var(--color-borders);
+    transition: all 300ms ease-in-out;
+}
+
+.news__new:hover {
+    border-top-color: var(--color-primary);
+}
+
+.news__new:last-child {
+    border-left: 1px solid var(--color-borders);
+    padding-left: 2.5rem;
+}
+
+.new__container-img {
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.new__img {
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.news__new:hover .new__img {
+    transform: scale(1.1);
+}
+
+.new__content {
+    flex: 1;
+}
+
+.new__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--color-title);
+    margin-bottom: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.new__title:hover,
+.new__more:hover {
+    color: var(--color-primary);
+}
+
+.new__description {
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: var(--color-text-description);
+    margin-bottom: 3rem;
+}
+
+.new__more {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-hover-dark);
+    font-size: 1.7;
+    transition: all 300ms ease-in-out;
+}
+
+.new__icon {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+.new-shapes__item {
+    position: absolute;
+    z-index: -1;
+}
+
+.new-shapes--shape1 {
+    top: 14rem;
+    left: 31.5rem;
+}
+
+.new-shapes--shape2 {
+    top: 12rem;
+    right: 0;
+}
+
+.new-shapes--shape3 {
+    bottom: 8rem;
+    left: 0;
+}
+
+.new-shapes--shape4 {
+    bottom: 6rem;
+    right: 16rem;
 }
