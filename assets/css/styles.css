@@ -418,7 +418,8 @@ body {
 
 .services__subtitle,
 .projects__subtitle,
-.stats__subtitle {
+.stats__subtitle,
+.reviews__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitle);
@@ -427,7 +428,8 @@ body {
 
 .services__title,
 .projects__title,
-.stats__title {
+.stats__title,
+.reviews__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -736,4 +738,93 @@ body {
     font-weight: 400;
     line-height: 1.2;
     color: var(--color-secondary);
+}
+
+/* ESTILOS SECCION REVIEWS */
+
+.layout__reviews {
+    position: relative;
+    z-index: 1;
+    padding-top: 14rem;
+    padding-bottom: 11rem;
+}
+
+.reviews__grid {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+
+.reviews__header {
+    text-align: left;
+    margin-bottom: 6rem;
+}
+
+.reviews__description {
+    margin: 3rem 0;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-text-description);
+}
+
+.reviews__container {
+    display: flex;
+    gap: 3rem;
+}
+
+.reviews__review {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.review__company {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.review__description {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--color-text-body);
+    margin-bottom: 4rem;
+}
+
+.review__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.author__container-img {
+    border-radius: 3.5rem;
+    overflow: hidden;
+}
+
+.author__content {
+    flex: 1;
+}
+
+.author__name {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color-bg-dark);
+    margin-bottom: 0.3rem;
+}
+
+.author__description {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-text-description);
+    opacity: 0.7;
+}
+
+.review-shapes__item {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 16%;
+    right: 26%;
 }
