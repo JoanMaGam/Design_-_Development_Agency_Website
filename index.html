@@ -15,13 +15,114 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!-- Cargar JS -->
+    <script src="assets/js/menu-mobile.js"></script>
+    <script src="assets/js/navbar-fixed.js"></script>
 
-
-    <title>Agencia Desarrollo Web | Joan Martí</title>
+    <title>Agencia Desarrollo Web</title>
 
 </head>
 
 <body>
+
+    <!-- MENU NAVEGACION RESPONSIVE -->
+    <div class="menu-mobile">
+
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="#" class="menu-mobile__link-logo">
+                    <img src="assets/img/logo1.png" alt="Logo del sitio web" class="menu-mobile__logo">
+                </a>
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+            </button>
+        </header>
+
+        <div class="menu-mobile__body">
+            <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Inicio</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+                        <ul class="menu-mobile__submenu-mobile">
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Diseño web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Programación</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Consultoría</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Portafolio
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+                        <ul class="menu-mobile__submenu-mobile">
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Diseño web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Programación</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Consultoría</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Blog
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+                        <ul class="menu-mobile__submenu-mobile">
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Diseño web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Programación</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Consultoría</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Equipo</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- LAYOUT PRINCIPAL O ESTRUCTURA PRINCIPAL -->
 
     <div class="layout">
 
@@ -34,6 +135,15 @@
                     <a href="#" class="navbar__link-logo">
                         <img src="./assets/img/logo1.png" class="navbar__logo-light" alt="logo">
                     </a>
+                </div>
+
+                <!-- BOTON DE MENÚ RESPONSIVE -->
+                <div class="navbar__mobile-btn">
+                    <button class="mobile-btn__wrap">
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                    </button>
                 </div>
 
                 <!-- NAVEGACION -->
